@@ -14,7 +14,7 @@ const current_timestamp = new Date().getTime();
 const HASH = md5(`${current_timestamp}${PRIVATE_KEY}${PUBLIC_KEY}`);
 
 
-const MENU = ['Stories','Comics','Events','Series'];
+const MENU = ['Stories','Comics','Events','Series', 'Characters'];
 let isFound = false;
 let option = '';
 
