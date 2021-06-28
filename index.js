@@ -21,15 +21,12 @@ let option = '';
 do {
     console.log("Welcome to the amazing marvel universe. :)");
     console.log("You can list by the following:");
-    // Create Terminal menu
     MENU.forEach((menu, index) => console.log(index + 1, menu));
     option = prompt("Enter your choice > ");
 
     const menu_create = MENU.map((menu, index) => menu.toLowerCase());
     isFound = menu_create.includes(option.toLowerCase());
 } while (!isFound);
-
-
 
 console.log(`${option} Loading...`);
 axios_instance
@@ -43,6 +40,7 @@ axios_instance
   .then((res) => {
     res.data.data.results.map((comic, index) => console.log((index + 1) , comic.description));
     console.log(`${option} Loading finished.`);
+    console.log("Finised loading in comics");
   })
   .catch((err) => {
     console.log(err);
