@@ -15,6 +15,7 @@ const HASH = md5(`${current_timestamp}${PRIVATE_KEY}${PUBLIC_KEY}`);
 
 // Well done Daniel on the new feature added. The clients are happy.
 // Cheers Daniel, let do more.
+// what are axios used for?
 const MENU = ['Stories','Comics','Events','Series', 'Characters'];
 let isFound = false;
 let option = '';
