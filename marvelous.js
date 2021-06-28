@@ -6,3 +6,5 @@ const human = {
     salary: 7000,
     currency: "USD"
 };
+
+console.log(human);
