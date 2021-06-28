@@ -13,7 +13,7 @@ const PRIVATE_KEY = "a5c74dab1944f86ab95a8ac5eedbae85b792e9c5";
 const current_timestamp = new Date().getTime();
 const HASH = md5(`${current_timestamp}${PRIVATE_KEY}${PUBLIC_KEY}`);
 
-
+// Well done Daniel on the new feature added. The clients are happy.
 const MENU = ['Stories','Comics','Events','Series', 'Characters'];
 let isFound = false;
 let option = '';
