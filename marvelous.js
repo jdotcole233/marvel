@@ -21,9 +21,21 @@ const carmodels = [
   { id: 5, make: "Rolls Royce", model: "Phantom" },
 ];
 
+const model_ = data => data.model;
+const make_ = data => data.make.toUpperCase();
 
-console.log(carmodels);
-const model = carmodels.map(car => car.model);
+function name_make (data) {
+    return data.make.toLowerCase();
+}
+
+const anony_make = function (data) {
+    return data.id
+};
+
+// const
+
+// console.log(carmodels);
+const model = carmodels.map(anony_make);
 console.log(model);
 
 
