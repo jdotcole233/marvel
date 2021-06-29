@@ -1,3 +1,5 @@
+import { mutate } from "./marvelousmethods.js";
+
 const human = {
     name: "Danielson Chinye",
     age: 35,
@@ -12,8 +14,12 @@ const human = {
 
 const cars = ["Audi", "BMW", "Toyota"];
 console.log("cars before ", cars);
+
+console.log(mutate(cars));
+
 cars.forEach((value, index) => {
-     cars[index] = value.toLowerCase();
+     const msg = `i love ${value}`;
+     cars[index] = msg.toLowerCase();
 });
 
 console.log("Cars after ", cars);
