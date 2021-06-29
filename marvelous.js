@@ -25,6 +25,9 @@ const carmodels = [
 ];
 
 
+const cars_ = carmodels.filter(car => car.make === "Bmw");
+
+console.log(cars_);
 
 
 
